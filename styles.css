@@ -21,6 +21,12 @@
     --ring: #059669;
   
     /* Color palette */
+    --red-400: #f87171;
+    --red-500: #ef4444;
+    --red-600: #dc2626;
+    --red-700: #b91c1c;
+    --red-900: #7f1d1d;
+    
     --green-400: #4ade80;
     --green-500: #22c55e;
     --green-600: #16a34a;
@@ -79,7 +85,13 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
-  
+  #logophoto{
+    height: 60px;
+    margin:5px;
+    margin-right:10px;
+    object-fit: cover;
+    overflow: hidden;
+  }
   img {
     max-width: 100%;
     height: auto;
@@ -104,12 +116,19 @@
   
   /* Neon Effects */
   .neon-text {
+    -webkit-text-stroke: 1px #fff;
     font-weight: bold;
     transition: all 0.3s ease;
   }
+
   
   .neon-text:hover {
-    text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor;
+    -webkit-text-stroke: 1px #fff;
+    /* color: transparent; */
+    text-decoration: none;
+    font-weight:500;
+    /* text-shadow: 0 0 5px currentColor; */
+    /* text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 20px currentColor; */
   }
   
   .neon-green {
@@ -124,7 +143,7 @@
   
   .neon-blue {
     color: var(--blue-500);
-    text-shadow: 0 0 5px var(--blue-500), 0 0 10px var(--blue-500), 0 0 20px var(--blue-500);
+    text-shadow: 0 0 5px var(--blue-500);
   }
   
   .neon-purple {
@@ -135,6 +154,10 @@
   .neon-yellow {
     color: var(--yellow-500);
     text-shadow: 0 0 5px var(--yellow-500), 0 0 10px var(--yellow-500), 0 0 20px var(--yellow-500);
+  }
+  .neon-red {
+    color: var(--red-500);
+    text-shadow: 0 0 5px var(--red-500), 0 0 10px var(--red-500), 0 0 20px var(--red-500);
   }
   
   .neon-border {

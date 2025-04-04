@@ -6,26 +6,32 @@
     <title>Battlground Gaming Zone</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome for icons -->
+     <!-- locomotion css api -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div id="main">  
     <!-- Navbar -->
     <header class="navbar">
         <div class="container">
             <div class="navbar-content">
                 <a href="/" class="logo">
-                    <i class="fas fa-bolt"></i>
-                    <span class="neon-text neon-green">BATTLEGROUND</span>
+                    <!-- <i class="fas fa-bolt"></i> -->
+                     <img id="logophoto" src="/img/logo.jpg" class="" alt="">
+                    <span class="neon-text neon-red">BATTLEGROUND</span>
                 </a>
-
                 <nav class="nav-links">
-                    <a href="#games" class="nav-link">Games</a>
-                    <a href="#booking" class="nav-link">Booking</a>
-                    <a href="#events" class="nav-link">Events</a>
-                    <a href="#location" class="nav-link">Location</a>
+                    <a href="#games" class="nav-link font-bold">Games</a>
+                    <a href="#booking" class="nav-link font-bold">Booking</a>
+                    <a href="#events" class="nav-link font-bold">Events</a>
+                    <a href="#location" class="nav-link font-bold">Location</a>
+                    <a href="login.html" class="nav-link font-bold">Login</a>
                 </nav>
 
-                <button class="btn btn-gradient-green-blue">Contact Us</button>
+                <button id="contact" onclick="window.location.href='#location'" class="btn btn-gradient-green-blue">Contact Us</button>
             </div>
         </div>
     </header>
@@ -33,9 +39,9 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="neon-text ">BATTLEGROUND</span> 
-                <span class="neon-text ">GAMING</span> 
+            <h1 id="holu" class="hero-title">
+                <span class="neon-text neon-blue">BATTLEGROUND</span> 
+                <span class="neon-text neon-blue ">GAMING</span> 
                 <span class="neon-text neon-blue">ZONE</span>
             </h1>
 
@@ -44,7 +50,7 @@
             </p>
 
             <div class="hero-buttons">
-                <button class="btn btn-gradient-pink-purple">Book Now</button>
+                <a  href="#booking" class="btn btn-gradient-pink-purple">Book Now</a>
                 <button class="btn btn-outline-blue">Explore Games</button>
             </div>
 
@@ -53,11 +59,9 @@
                 <i class="fas fa-chevron-down bounce"></i>
             </a>
         </div>
-
         <div class="hero-overlay"></div>
         <img src="img/download.jpeg" alt="Gaming VR Background" class="hero-bg">
     </section>
-
     <!-- Games Section -->
     <section id="games" class="section games-section">
         <div class="section-bg games-bg"></div>
@@ -74,10 +78,10 @@
             <div class="games-grid">
                 <div class="game-card" data-color="blue">
                     <div class="game-card-image">
-                        <img src="placeholder.jpg" alt="Virtual Reality Arena">
+                        <img src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?ixlib=rb-4.0.3" alt="Virtual Reality Arena">
                         <div class="game-card-overlay"></div>
                     </div>
-                    <div class="game-card-content">
+                    <div class="game-card-content" >
                         <h3 class="game-card-title">Virtual Reality Arena</h3>
                         <p class="game-card-description">Step into another world with our cutting-edge VR experiences. Perfect for groups and parties.</p>
                         <button class="btn btn-blue">Book Now</button>
@@ -122,7 +126,7 @@
 
                 <div class="game-card" data-color="purple">
                     <div class="game-card-image">
-                        <img src="placeholder.jpg" alt="Console Gaming Lounge">
+                        <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?ixlib=rb-4.0.3" alt="Console Gaming Lounge">
                         <div class="game-card-overlay"></div>
                     </div>
                     <div class="game-card-content">
@@ -153,14 +157,14 @@
         <div class="container">
             <div class="features-grid">
                 <div class="features-image">
-                    <img src="placeholder.jpg" alt="Gaming Features">
+                    <img src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?ixlib=rb-4.0.3" alt="Gaming Features">
                     <div class="features-image-overlay"></div>
                 </div>
 
                 <div class="features-content">
                     <h2 class="features-title">
                         <span class="neon-text neon-pink">Why Choose</span> 
-                        <span class="neon-text neon-green">Nexus Gaming?</span>
+                        <span class="neon-text neon-green">Battleground Gaming?</span>
                     </h2>
 
                     <div class="features-list">
@@ -446,8 +450,8 @@
                             <div class="info-content">
                                 <h3 class="info-title">Our Location</h3>
                                 <p class="info-description">
-                                    123 Gaming Street, Tech District<br>
-                                    Noida, Uttar Pradesh 201301<br>
+                                    Swarna Jayanti nagar,Rmaghat Road<br>
+                                    Aligarh, Uttar Pradesh 202001<br>
                                     India
                                 </p>
                             </div>
@@ -461,7 +465,7 @@
                                 <h3 class="info-title">Contact Us</h3>
                                 <p class="info-description">
                                     Phone: +91 98765 43210<br>
-                                    Email: info@nexusgaming.com
+                                    Email: info@BATTLEGROUNDgaming.com
                                 </p>
                             </div>
                         </div>
@@ -473,9 +477,7 @@
                             <div class="info-content">
                                 <h3 class="info-title">Opening Hours</h3>
                                 <p class="info-description">
-                                    Monday - Thursday: 10:00 AM - 10:00 PM<br>
-                                    Friday - Saturday: 10:00 AM - 1:00 AM<br>
-                                    Sunday: 11:00 AM - 10:00 PM
+                                    Tuesday - Sunday: 10:00 AM - 11:00 PM<br>
                                 </p>
                             </div>
                         </div>
@@ -534,7 +536,7 @@
                 <div class="footer-about">
                     <a href="/" class="footer-logo">
                         <i class="fas fa-bolt"></i>
-                        <span class="neon-text neon-green">NEXUS</span>
+                        <span class="neon-text neon-green">BATTLEGROUND</span>
                     </a>
                     <p class="footer-description">
                         The ultimate gaming destination with cutting-edge technology and immersive experiences for gamers of all levels.
@@ -588,7 +590,7 @@
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <span>info@nexusgaming.com</span>
+                            <span>info@BATTLEGROUNDgaming.com</span>
                         </li>
                     </ul>
                 </div>
@@ -596,7 +598,7 @@
 
             <div class="footer-bottom">
                 <p class="copyright">
-                    &copy; <span id="current-year"></span> Nexus Gaming Zone. All rights reserved.
+                    &copy; <span id="current-year"></span> BATTLEGROUND Gaming Zone. All rights reserved.
                 </p>
                 <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
@@ -606,7 +608,11 @@
             </div>
         </div>
     </footer>
-
+</div>
+    <!-- locomotive scroll js -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js" integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 </html>
