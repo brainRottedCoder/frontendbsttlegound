@@ -1251,6 +1251,9 @@
     #contact{
       display:none;
     }
+    #holu{
+      line-height: 3rem;
+    }
   }
   
   /* Media Queries */
