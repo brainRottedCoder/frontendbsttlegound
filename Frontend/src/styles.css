@@ -1063,7 +1063,9 @@
   .location-map {
     position: relative;
     height: 400px;
-    border-radius: 0.5rem;
+    object-fit: cover;
+    
+    /* border-radius: 0.5rem; */
     overflow: hidden;
   }
   
